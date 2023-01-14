@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+    <div class="w-75 mx-auto my-5">
+
+        <label for="nameInput">prouduct name :</label>
+        <input type="text" class="form-control mb-3 " id="nameInput">
+        
+        
+        <label for="priceInput">prouduct price :</label>
+        <input type="text" class="form-control mb-3 " id="priceInput">
+        
+        
+        <label for="catigoryInput">prouduct catigory :</label>
+        <input type="text" class="form-control mb-3 " id="catigoryInput">
+        
+        
+        <label for="descriptionInput">prouduct description :</label>
+        <input type="text" class="form-control mb-3 " id="descriptionInput">
+        
+        <button onclick="addProduct()" class="btn btn-outline-info"> add prouduct</button>
+        </div>
+        
+        
+        
+        <input oninput="SearchProd(this.value)" type="text" class="form-control mx-auto w-50 my-5" placeholder="search"  name="" id="">
+        
+        <div class="w-75 mx-auto ">
+        <table class="table text-center">
+        <thead>
+        <th>idex</th>
+        <th>name</th>
+        <th>price</th>
+        <th>category</th>
+        <th>description</th>
+        <th>delete</th>
+        <th>update</th>
+        
+        </thead>
+        <tbody id="tableBody">
+            
+        </tbody>
+        
+        </table>
+        
+        </div>
+
+
+
+
+
+
+
+  <script src="main.js"></script>  
+</body>
+</html>
